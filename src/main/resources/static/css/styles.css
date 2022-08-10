@@ -5,20 +5,35 @@ html {
 }
 
 .card {
-    height: 500px;
+    height: 600px;
     border-radius: 10px !important;
     background-color: rgba(0, 0, 0, 0.4) !important;
-    border-color: rgba(0, 132, 255, 0.603) !important;
+    border-color: rgb(0 0 0 / 60%) !important;
 }
 
 .card-body {
-    overflow-y: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-body::-webkit-scrollbar-track {
+    background: rgb(16 17 22) !important;
+}
+
+.card-body::-webkit-scrollbar {
+    width: 6px;
+    background: white;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+    background: white;
 }
 
 .card-header {
     border-radius: 10px 10px 0 0 !important;
     border-bottom: 0 !important;
-    background-color: rgba(0, 132, 255, 0.603) !important;
+    background-color: rgb(16 17 22) !important;
 }
 
 .card-footer {
